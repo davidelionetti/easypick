@@ -20,7 +20,9 @@ $(document).ready(function() {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         spaceBetween: 30,
-        effect: 'fade'
+        effect: 'fade',
+        loop: true
+        
     });
 
 });

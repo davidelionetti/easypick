@@ -18,7 +18,16 @@ section.how-it-works h3 {
 }
 section.go-to {
     padding: 0px !important;
-    height: 85vh;
+}
+@media (min-width: 768px) {
+    section.go-to {
+        height: 85vh;
+    }
+}
+@media (max-width: 767px) {
+    section.go-to {
+        height: 70vh;
+    }
 }
 .swiper-container {
     width: 100%;
