@@ -36,7 +36,7 @@ a:focus {
 }
 hr {
   max-width: 100px;
-  margin: 25px auto 0;
+  margin: 25px auto 100px;
   border-width: 1px;
   border-color: rgba(34, 34, 34, 0.1);
 }
@@ -106,6 +106,10 @@ p {
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
+.navbar-default.affix {
+    background-color: white;
+    border-color: rgba(34, 34, 34, 0.1);
+}
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
@@ -122,13 +126,17 @@ p {
   .navbar-default .nav > li > a:focus {
     color: rgba(255, 255, 255, 0.7);
   }
+    .navbar-default .nav > li.active > a.first,
+    .navbar-default .nav > li.active > a.first:focus {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+    .navbar-default .nav > li.active > a.first:hover,
+    .navbar-default .nav > li.active > a.first:focus:hover {
+        color: white !important;
+    }
   .navbar-default .nav > li > a:hover,
   .navbar-default .nav > li > a:focus:hover {
     color: white;
-  }
-  .navbar-default.affix {
-    background-color: white;
-    border-color: rgba(34, 34, 34, 0.1);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
     color: #222222;
@@ -141,6 +149,10 @@ p {
   .navbar-default.affix .nav > li > a:focus {
     color: #222222;
   }
+    .navbar-default.affix .nav > li.active > a.first,
+    .navbar-default.affix .nav > li.active > a.first:focus {
+        color: #222222 !important;
+    }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
     color: #fdcc52;

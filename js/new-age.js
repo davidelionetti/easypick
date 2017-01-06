@@ -12,6 +12,16 @@ $(document).ready(function() {
         overScrollFix: true,
         speed: 0.5
     });
+    
+    // Swiper
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        effect: 'fade'
+    });
 
 });
 
