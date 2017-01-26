@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Davide Lionetti">
+        
+        <title>Get started with Easypick!</title>
+        
+        <!-- Custom CSS -->
+        <link href="css/register.css" rel="stylesheet">
+        
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <!-- Google Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        
+        <div class="content">
+            
+            <div class="form-container">
+                
+                <div class="form-left">
+                    
+                    <div class="content">
+                    
+                        <div class="upper">
+
+                            <div class="circle img-container">
+                                <img src="img/boss.png">
+                            </div>
+                            
+                            <h4>Let's get you set up</h4>
+
+                            <p>It should only take a couple of minutes to pair with your university</p>
+
+                        </div>
+
+                        <div class="lower">
+
+                            <div class="circle" id="next-step">
+
+                                <i class="material-icons">keyboard_arrow_right</i>
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+                
+                </div>
+                
+                <div class="form-right">
+                    
+                    <div class="upper">
+                    
+                        <div class="input-group">
+                            Name
+                            <input type="text" class="form-control" placeholder="Steve Jobs">
+                        </div>
+
+                        <div class="input-group">
+                            Date of Birth
+                            <input type="text" class="form-control" placeholder="01/01/70">
+                            <span class="input-group-addon"><i class="material-icons">date_range</i></span>
+                        </div>
+
+                        <div class="input-group">
+                            Email
+                            <input type="email" class="form-control" placeholder="bro@email.com">
+                        </div>
+
+                        <div class="input-group">
+                            Mobile
+                            <input type="tel" class="form-control" placeholder="+49 158 8958 6332">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="lower">
+                        
+                        <a class="btn disabled">Reset</a>
+                    
+                        <button type="submit" class="btn btn-info waves-effect">Save</button>
+                        
+                    </div>
+                
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- Materialize -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        
+        <script>
+            $('#next-step').click(function(){
+                $('.form-left').animate({
+                    left: "-100%"
+                }, 500);
+                $('.form-right').animate({
+                    left: "0%"
+                }, 500);
+            });
+        </script>
+    </body>
+</html>

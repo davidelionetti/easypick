@@ -1,0 +1,86 @@
+html, body {
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+h4 {
+    font-weight: 800 !important;
+    letter-spacing: 1.5px;
+}
+#next-step {
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    color: #ffd500;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+#next-step i {
+    font-size: 40px;
+}
+@media (max-width: 767px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    html, body, .container, .form-container {
+        min-height: 100vh;
+    }
+    .form-container .form-left {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: #ffd500;
+    }
+    .form-container .form-left .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        height: 80%;
+        width: 80%;
+    }
+    .form-container .form-left .content .upper {
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        transform: translateY(-50%);
+    }
+    .form-container .form-left .content .lower {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    .form-container .form-right {
+        position: absolute;
+        width: 100%;
+        left: 100%;
+        top: 0;
+    }
+}
+/*body {
+    background-color: #f8f8f8 !important;
+    min-height: 100vh;
+}
+.form-container {
+    min-height: 80vh;
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+}
+.form-container .form-left {
+    width: 45%;
+    background-color: #ffd500;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.form-container .form-right {
+    width: 55%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}*/

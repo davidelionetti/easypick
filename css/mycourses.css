@@ -1,0 +1,145 @@
+section {
+    padding: 0 !important;
+}
+
+.fa {
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#mainNav {
+    background-color: rgb(244, 67, 54) !important;
+}
+
+.navbar-brand {
+    line-height: 30px !important;
+}
+
+.navbar-brand, .navbar-brand:hover {
+    color: white !important;
+}
+
+.navbar-default .navbar-header .navbar-toggle {
+    color: white;
+    border-color: white;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-default .navbar-toggle:focus {
+    color: white;
+    border-color: white;
+    background: none;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: white;
+    color: rgb(244, 67, 54) !important;;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-default .nav > li > a {
+        color: rgba(255,255,255,0.75);
+    }
+    .navbar-default .nav > li > a:hover {
+        color: white;
+    }
+}
+
+.opener h2 {
+    display: inline;
+}
+
+.opener {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: rgb(244, 67, 54) !important;
+}
+
+.opener .fa {
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.tab {
+    display: none;
+}
+
+#students {
+    display: block;
+}
+
+.page-scroll {
+    cursor: pointer;
+}
+
+#students ul {
+    list-style: none;
+}
+
+#students ul li {
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+#students ul li.man .icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url(../img/man.png) no-repeat center;
+    background-size: cover;
+}
+
+#students ul li.girl .icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url(../img/girl.png) no-repeat center;
+    background-size: cover;
+}
+
+#reviews ul {
+    list-style: none;
+}
+
+/*******************
+Contact Form
+*******************/
+textarea {
+    height: 100px;
+}
+
+.form-group.is-focused label, .form-group.is-focused label.control-label {
+    color: #f44336 !important;
+}
+
+.form-group.is-focused .form-control {
+    background-image: linear-gradient(rgb(244, 67, 54),rgb(244, 67, 54)),linear-gradient(#D2D2D2,#D2D2D2) !important;
+}
+
+.radio input[type=radio]:checked~.circle, label.radio-inline input[type=radio]:checked~.circle {
+    border-color: rgb(244, 67, 54) !important;
+}
+
+.radio input[type=radio]:checked~.check, label.radio-inline input[type=radio]:checked~.check {
+    background-color: rgb(244, 67, 54) !important;
+}
+
+.radio+.radio {
+    margin-top: 10px !important; 
+}
